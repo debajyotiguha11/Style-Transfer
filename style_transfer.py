@@ -113,9 +113,9 @@ def load_image(img_path, max_size=400, shape=None):
 """Next, I'm loading in images by file name and forcing the style image to be the same size as the content image."""
 
 # load in content and style image
-content = load_image('deep-learning-v2-pytorch-master/style-transfer/images/space_needle.jpg').to(device)
+content = load_image('images/octopus.jpg').to(device)
 # Resize style to match content, makes code easier
-style = load_image('deep-learning-v2-pytorch-master/style-transfer/images/hockney.jpg', shape=content.shape[-2:]).to(device)
+style = load_image('images/kahlo.jpg', shape=content.shape[-2:]).to(device)
 
 # helper function for un-normalizing an image 
 # and converting it from a Tensor image to a NumPy image for display
